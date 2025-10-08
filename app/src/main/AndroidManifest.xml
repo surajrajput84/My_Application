@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:label="Clothing Shop"
+        android:icon="@drawable/logo"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <!-- Start Screen (Launcher Activity) -->
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Role Selection Screen -->
+        <activity
+            android:name=".RoleActivity"
+            android:exported="false" />
+
+        <!-- Login Screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Home Screen (after login) -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Category Screens -->
+        <activity android:name=".PantsActivity" />
+        <activity android:name=".ShirtActivity" />
+        <activity android:name=".JacketActivity" />
+        <activity android:name=".ShortsActivity" />
+        <activity android:name=".VestActivity" />
+        <activity android:name=".TshirtActivity" />
+
+    </application>
+
+</manifest>
+
