@@ -9,6 +9,16 @@ import com.google.android.material.button.MaterialButton
 
 class LoginActivity : AppCompatActivity() {
 
+    // A map to store multiple user credentials (email to password)
+    private val userCredentials = mapOf(
+        "suraj" to "34",
+        "devyani" to "23",
+        "mahesh" to "31",
+        "omkar" to "35",
+        "janhavi" to "38",
+
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -26,9 +36,9 @@ class LoginActivity : AppCompatActivity() {
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
             } else {
-                // Dummy validation
-                if (email == "suraj" && password == "123456") {
-                    Toast.makeText(this, "Login successful as $role", Toast.LENGTH_SHORT).show()
+                // Validate against the map of credentials
+                if (userCredentials.containsKey(email) && userCredentials[email] == password) {
+                    Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
                     val intent = Intent(this, HomeActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

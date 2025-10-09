@@ -16,7 +16,7 @@ class StartActivity : AppCompatActivity() {
         startButton.setOnClickListener {
             val intent = Intent(this, RoleActivity::class.java)
             startActivity(intent)
-            finish() // finish StartActivity so back press won't return here
+            finish()
         }
     }
 }

@@ -3,16 +3,18 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomeActivity : AppCompatActivity() {
+// 1. Inherit from BaseActivity instead of AppCompatActivity
+class HomeActivity : BaseActivity() {
+
+    // 2. Specify which navigation item should be selected for this screen
+    override val selectedNavItemId: Int = R.id.navigation_home
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home)
 
-        // Find category buttons by their IDs
+        // Your existing click listeners for categories remain the same
         val shirtButton = findViewById<LinearLayout>(R.id.shirt_category_button)
         val pantsButton = findViewById<LinearLayout>(R.id.pants_category_button)
         val jacketButton = findViewById<LinearLayout>(R.id.jacket_category_button)
@@ -20,7 +22,6 @@ class HomeActivity : AppCompatActivity() {
         val vestButton = findViewById<LinearLayout>(R.id.vest_category_button)
         val tshirtButton = findViewById<LinearLayout>(R.id.tshirt_category_button)
 
-        // Set click listeners for each category button
         shirtButton.setOnClickListener {
             startActivity(Intent(this, ShirtActivity::class.java))
         }
@@ -33,23 +34,15 @@ class HomeActivity : AppCompatActivity() {
         shortsButton.setOnClickListener {
             startActivity(Intent(this, ShortsActivity::class.java))
         }
+        // Assuming you have VestActivity, create it if you haven't
         vestButton.setOnClickListener {
-            startActivity(Intent(this, VestActivity::class.java))
+            // startActivity(Intent(this, VestActivity::class.java))
         }
         tshirtButton.setOnClickListener {
             startActivity(Intent(this, TshirtActivity::class.java))
         }
 
-        // Handle Bottom Navigation
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_bar)
-        bottomNavigationView.selectedItemId = R.id.navigation_home // Set home as selected
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                // R.id.navigation_home -> true // Already on the home screen, do nothing.
-                // You can add navigation to other screens here if needed
-                else -> false
-            }
-        }
+        // 3. Delete all the old BottomNavigationView code from here.
+        // BaseActivity now handles it automatically.
     }
 }
-

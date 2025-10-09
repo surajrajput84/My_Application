@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
@@ -42,6 +41,9 @@
         <activity android:name=".ShortsActivity" />
         <activity android:name=".VestActivity" />
         <activity android:name=".TshirtActivity" />
+
+        <!-- Product Detail Screen -->
+        <activity android:name=".Shirt1Activity" />
 
     </application>
 
