@@ -342,7 +342,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mens Shirt"
+                            android:text="Multi color pant"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -443,11 +443,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/product_2" />
+                            android:src="@drawable/mutli_color_pants" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mens T-Shirt"
+                            android:text="black pant"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -492,11 +492,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/product_4" />
+                            android:src="@drawable/black_armani_pants" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Full shirt"
+                            android:text="Blue pant"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -581,15 +581,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/gallery_thumb" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nike Shoes"
-                            android:textSize="14sp"
-                            android:textColor="#333333"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp" />
+                            android:src="@drawable/grey_armani_pants" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -617,11 +610,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/gallery_thumb" />
+                            android:src="@drawable/lightyellow_pants" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Titan 365"
+                            android:text="Grey jeans"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -662,11 +655,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/gallery_thumb" />
+                            android:src="@drawable/yellow_pants" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sunglass"
+                            android:text="yellow pants"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -698,11 +691,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/gallery_thumb" />
+                            android:src="@drawable/black_armani_pants" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nike Shoes"
+                            android:text="Black Armani Pants"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -743,11 +736,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/gallery_thumb" />
+                            android:src="@drawable/mutli_color_pants" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="3 in one combo"
+                            android:text="Multi color Pants"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -779,11 +772,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/gallery_thumb" />
+                            android:src="@drawable/blue_pant" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Shoes"
+                            android:text="Blue Pants"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"

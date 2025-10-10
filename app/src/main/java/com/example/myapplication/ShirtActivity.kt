@@ -73,6 +73,11 @@ class ShirtActivity : AppCompatActivity() {
             val intent = Intent(this, Shirt1Activity::class.java)
             startActivity(intent)
         }
+        val shirt2Button = findViewById<CardView>(R.id.shirt_2_button)
+        shirt1Button.setOnClickListener {
+            val intent = Intent(this, Shirt2Activity::class.java)
+            startActivity(intent)
+        }
     }
 }
 

@@ -15,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
         "devyani" to "23",
         "mahesh" to "31",
         "omkar" to "35",
-        "janhavi" to "38",
+        "janhavi" to "37",
 
     )
 
