@@ -6,13 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="shirt"
+        app:titleTextColor="@android:color/black"
+        app:navigationIconTint="@android:color/black"/>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="80dp"
         android:clipToPadding="false">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,7 +34,8 @@
                 <ImageView
                     android:id="@+id/productImageView"
                     android:layout_width="match_parent"
-                    android:layout_height="353dp"
+                    android:layout_height="288dp"
+                    android:layout_marginTop="60dp"
                     android:contentDescription="Product Image"
                     android:scaleType="centerCrop"
                     android:src="@drawable/shirt_2" />
@@ -37,7 +46,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="60dp"
                     android:background="@drawable/oval_background"
                     android:src="@drawable/back"
                     app:tint="@android:color/black"
