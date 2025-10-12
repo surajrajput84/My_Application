@@ -4,18 +4,18 @@ import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
-class Shirt1Activity : AppCompatActivity() {
+class trouserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.shirt1)
+        setContentView(R.layout.trouser)
 
         // Find the back button by its ID
         val backButton = findViewById<ImageButton>(R.id.back_button)
 
 
         backButton.setOnClickListener {
-            // Closes Shirt1Activity and goes back to previous activity
+
             finish()
         }
     }

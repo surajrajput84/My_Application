@@ -9,16 +9,6 @@ import com.google.android.material.button.MaterialButton
 
 class LoginActivity : AppCompatActivity() {
 
-    // A map to store multiple user credentials (email to password)
-    private val userCredentials = mapOf(
-        "suraj" to "34",
-        "devyani" to "23",
-        "mahesh" to "31",
-        "omkar" to "35",
-        "janhavi" to "37",
-
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -27,25 +17,23 @@ class LoginActivity : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val loginButton = findViewById<MaterialButton>(R.id.loginButton)
 
-        val role = intent.getStringExtra("ROLE") // Role from RoleActivity (optional use)
+        // Dummy credentials
+        val correctUsername = "suraj"
+        val correctPassword = "34"
 
         loginButton.setOnClickListener {
-            val email = emailEditText.text.toString().trim()
-            val password = passwordEditText.text.toString().trim()
+            val enteredUsername = emailEditText.text.toString().trim()
+            val enteredPassword = passwordEditText.text.toString().trim()
 
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            if (enteredUsername.isEmpty() || enteredPassword.isEmpty()) {
+                Toast.makeText(this, "Please enter all fields", Toast.LENGTH_SHORT).show()
+            } else if (enteredUsername == correctUsername && enteredPassword == correctPassword) {
+                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+                finish()
             } else {
-                // Validate against the map of credentials
-                if (userCredentials.containsKey(email) && userCredentials[email] == password) {
-                    Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
-
-                    val intent = Intent(this, HomeActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show()
-                }
+                Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }
         }
     }

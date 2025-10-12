@@ -19,12 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="09:21"
-            android:textSize="14sp"
-            android:textColor="#333333" />
+
 
         <Space
             android:layout_width="0dp"
@@ -323,6 +318,8 @@
                 android:paddingEnd="16dp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/shirt_1_button"
+                    android:clickable="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -335,6 +332,7 @@
                         android:orientation="vertical"
                         android:paddingBottom="8dp">
                         <ImageView
+
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:scaleType="centerCrop"
@@ -371,6 +369,8 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/trouser_button"
+                    android:clickable="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

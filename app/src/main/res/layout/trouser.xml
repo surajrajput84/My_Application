@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".trouserActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                     android:layout_height="353dp"
                     android:contentDescription="Product Image"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/shirt_2" />
+                    android:src="@drawable/product_3" />
 
                 <ImageButton
                     android:id="@+id/back_button"
@@ -65,7 +65,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:text="small checks shirt"
+                        android:text="Trouser"
                         android:textColor="@android:color/black"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -91,7 +91,7 @@
                         android:id="@+id/productPriceTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rs. 1250"
+                        android:text="Rs.3000"
                         android:textColor="@color/black"
                         android:textSize="18sp"/>
 
@@ -123,54 +123,91 @@
                     android:layout_marginTop="8dp"
                     app:singleSelection="true">
 
-                    <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XS"/>
-                    <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S"/>
-                    <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="M"/>
-                    <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L"/>
-                    <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XL"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_xs"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_s"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="32"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_m"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_l"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="36"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_xl"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="38"/>
                 </com.google.android.material.chip.ChipGroup>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Colors Available:"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"/>
+
 
                 <LinearLayout
+                    android:id="@+id/color_options_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
-                    <View
+                    <FrameLayout
+                        android:id="@+id/colorKhaki"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginEnd="12dp"
-                        android:background="@drawable/color_swatch_yellow"/>
-                    <View
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/color_swatch_black"/>
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true">
+
+
+                    </FrameLayout>
 
                     <FrameLayout
+                        android:id="@+id/colorBlack"
                         android:layout_width="40dp"
-                        android:layout_height="40dp">
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true">
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/color_swatch_red"/>
+                            android:background="@drawable/color_swatch_black"/>
                         <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:id="@+id/black_selected_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:src="@drawable/select"
-                            app:tint="@android:color/black"/>
+                            app:tint="@android:color/white"
+                            android:visibility="gone" />
                     </FrameLayout>
 
+                    <FrameLayout
+                        android:id="@+id/colorRed"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true">
+
+
+                    </FrameLayout>
                 </LinearLayout>
 
             </LinearLayout>
@@ -183,9 +220,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/bottom_nav_item_color"
+        android:background="@color/white"
         android:padding="16dp">
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/addToCartButton"
             android:layout_width="match_parent"
@@ -193,7 +229,7 @@
             android:text="Add To Cart"
             android:textSize="18sp"
             app:cornerRadius="12dp"
-            app:backgroundTint="#F05050"/>
+            app:backgroundTint="#F25050"/>
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

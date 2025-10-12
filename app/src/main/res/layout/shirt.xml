@@ -301,12 +301,7 @@
                     android:textSize="18sp"
                     android:textColor="#333333"
                     android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="See all"
-                    android:textColor="#FF0000"
-                    android:textSize="14sp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -319,6 +314,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/shirt_1_button"
+                    android:clickable="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -368,7 +364,9 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/shirt_2_button" android:layout_width="0dp"
+                    android:id="@+id/shirt_2_button"
+                    android:clickable="true"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:cardCornerRadius="8dp"

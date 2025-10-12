@@ -10,43 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
 
-        <!-- Start Screen (Launcher Activity) -->
-        <activity
-            android:name=".StartActivity"
-            android:exported="true">
+        <!-- Launcher -->
+        <activity android:name=".StartActivity" android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <!-- Role Selection Screen -->
-        <activity
-            android:name=".RoleActivity"
-            android:exported="false" />
-
-        <!-- Login Screen -->
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-
-        <!-- Home Screen (after login) -->
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-
-        <!-- Category Screens -->
-        <activity android:name=".PantsActivity" />
-        <activity android:name=".ShirtActivity" />
-        <activity android:name=".JacketActivity" />
-        <activity android:name=".ShortsActivity" />
-        <activity android:name=".VestActivity" />
-        <activity android:name=".TshirtActivity" />
-
-        <!-- Product Detail Screen -->
-        <activity android:name=".Shirt1Activity" />
-
+        <!-- Activities -->
+        <activity android:name=".RoleActivity" android:exported="false"/>
+        <activity android:name=".LoginActivity" android:exported="false"/>
+        <activity android:name=".HomeActivity" android:exported="false"/>
+        <activity android:name=".PantsActivity" android:exported="false"/>
+        <activity android:name=".ShirtActivity" android:exported="false"/>
+        <activity android:name=".JacketActivity" android:exported="false"/>
+        <activity android:name=".ShortsActivity" android:exported="false"/>
+        <activity android:name=".VestActivity" android:exported="false"/>
+        <activity android:name=".TshirtActivity" android:exported="false"/>
+        <activity android:name=".Shirt1Activity" android:exported="false"/>
+        <activity android:name=".Shirt2Activity" android:exported="false"/>
+        <activity android:name=".trouserActivity" android:exported="false"/>
     </application>
-
 </manifest>
-

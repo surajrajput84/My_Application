@@ -3,29 +3,29 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.button.MaterialButton
+import android.widget.Button
 
 class RoleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.role)
+        setContentView(R.layout.role) // role selection layout
 
-        val ownerButton = findViewById<MaterialButton>(R.id.doctorButton)
-        val userButton = findViewById<MaterialButton>(R.id.patientButton)
+        val customerButton = findViewById<Button>(R.id.doctorButton)
+        val adminButton = findViewById<Button>(R.id.patientButton)
 
-        ownerButton.setOnClickListener {
+        customerButton.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
-            intent.putExtra("ROLE", "Owner")
+            intent.putExtra("ROLE", "customer")
             startActivity(intent)
-            finish() // finish RoleActivity to prevent going back to it
+            finish() // close RoleActivity
         }
 
-        userButton.setOnClickListener {
+        adminButton.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
-            intent.putExtra("ROLE", "User")
+            intent.putExtra("ROLE", "admin")
             startActivity(intent)
-            finish() // finish RoleActivity to prevent going back to it
+            finish()
         }
     }
 }
