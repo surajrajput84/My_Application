@@ -532,7 +532,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:scaleType="centerCrop"
-                android:src="@android:drawable/alert_dark_frame" />
+                android:src="@drawable/thirtyoff" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

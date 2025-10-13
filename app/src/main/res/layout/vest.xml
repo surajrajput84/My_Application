@@ -338,11 +338,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/product_1" />
+                            android:src="@drawable/vest1" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mens Shirt"
+                            android:text="black vest"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -350,7 +350,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rs. 1000"
+                            android:text="Rs. 100"
                             android:textSize="14sp"
                             android:textColor="#000000"
                             android:textStyle="bold"
@@ -385,12 +385,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/product_3" />
+
+                            android:src="@drawable/colorvest" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trouser"
+                            android:text="color verst"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -398,7 +398,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rs. 3000"
+                            android:text="Rs. 300"
                             android:textSize="14sp"
                             android:textColor="#000000"
                             android:textStyle="bold"
@@ -442,8 +442,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/product_2" />
+
+                            android:src="@drawable/yellowvest" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -457,7 +457,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="16dp"
                             android:layout_marginStart="8dp"
-                            android:text="Rs. 1000"
+                            android:text="Rs. 100"
                             android:textColor="#000000"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -491,12 +491,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/product_4" />
+
+                            android:src="@drawable/whitevest2" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Full shirt"
+                            android:text="white vest"
                             android:textSize="14sp"
                             android:textColor="#333333"
                             android:layout_marginStart="8dp"
@@ -532,7 +532,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:scaleType="centerCrop"
-                android:src="@android:drawable/alert_dark_frame" />
+                android:src="@drawable/fiftyoff" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
